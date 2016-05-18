@@ -1,6 +1,6 @@
 # Hybrid App Redux Vs Ionic
 
-CI Status
+CI Status [![Build Status](https://travis-ci.org/zhangsichu/HybridAppReduxVsIonic.svg?branch=master)](https://travis-ci.org/zhangsichu/HybridAppReduxVsIonic)
 
 #Webpack
 ##Step 1
