@@ -15,7 +15,12 @@ module.exports = {
       {
         test: /\.(html)$/,
         loader: 'file?name=[name].[ext]'
-      }
+      },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        loaders: [ 'babel' ]
+      },
     ]
   },
   devServer: {

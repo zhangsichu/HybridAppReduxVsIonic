@@ -9,5 +9,12 @@ CI Status
 ###npm install webpack-hot-middleware --save-dev
 ###npm install file-loader --save-dev
 
+##Step 2
+###npm install babel-core --save-dev
+###npm install babel-loader --save-dev
+###npm install babel-preset-es2015 --save-dev
+###npm install babel-preset-stage-0 --save-dev
+###npm install file-loader --save-dev
+
 #Redux
 #Ionic
