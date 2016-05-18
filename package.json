@@ -1,0 +1,24 @@
+{
+  "name": "hybrid-app-redux-vs-ionic",
+  "version": "0.0.1",
+  "description": "Hybrid application redux Vs ionic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangsichu/HybridAppReduxVsIonic.git"
+  },
+  "keywords": [
+    "Hybrid",
+    "Redux",
+    "Ionic"
+  ],
+  "author": "zhangsichu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangsichu/HybridAppReduxVsIonic/issues"
+  },
+  "homepage": "https://github.com/zhangsichu/HybridAppReduxVsIonic#readme"
+}

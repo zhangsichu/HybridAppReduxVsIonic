@@ -1,4 +1,4 @@
-# Hybird App Redux Vs Ionic
+# Hybrid App Redux Vs Ionic
 
 CI Status
 
