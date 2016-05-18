@@ -4,7 +4,9 @@
   "description": "Hybrid application redux Vs ionic",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --history-api-fallback --hot --inline --progress --colors --port 3000",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build": "NODE_ENV=production webpack --progress --colors"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/zhangsichu/HybridAppReduxVsIonic/issues"
   },
-  "homepage": "https://github.com/zhangsichu/HybridAppReduxVsIonic#readme"
+  "homepage": "https://github.com/zhangsichu/HybridAppReduxVsIonic#readme",
+  "devDependencies": {
+    "file-loader": "^0.8.5",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.10.0"
+  }
 }
