@@ -2,6 +2,10 @@
 www/
 node_modules/
 
-*.iml
 .DS_Store
+.idea
+
+*.iml
+
+Thumbs.db
 npm-debug.log
