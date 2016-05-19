@@ -13,9 +13,8 @@ CI Status [![Build Status](https://travis-ci.org/zhangsichu/HybridAppReduxVsIoni
   * Tag: travis-ci
 
 ##Step 3 - 添加 react 和代码检查
-  * 添加 React 、 eslint 和 csslint
-    * Tag:
-    * Tag: 
+  * 添加 React 、 eslint 和 csslint 等包
+    * Tag: package-loaders
 
 #Redux
 
