@@ -1,9 +1,10 @@
-let module = {}
-module.sayHey = function(){
-  let text = 'hello world'
-  alert(text)
-}
+import React from 'react'
+import ReactDOM from 'react-dom'
+import css from './index.scss'
 
-let bindFunction = ::module.sayHey
-
-bindFunction()
+ReactDOM.render(
+  <div className={css.header}>
+    Hello World.
+  </div>,
+  document.getElementById('root')
+)

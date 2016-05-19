@@ -3,21 +3,21 @@
 CI Status [![Build Status](https://travis-ci.org/zhangsichu/HybridAppReduxVsIonic.svg?branch=master)](https://travis-ci.org/zhangsichu/HybridAppReduxVsIonic)
 
 #Webpack
-##Step 1 - Init webpack
-###npm install webpack --save-dev
-###npm install webpack-dev-server --save-dev
-###npm install webpack-hot-middleware --save-dev
-###npm install file-loader --save-dev
+##Step 1 - 初始化 webpack
+* 初始化 Webpack 配置，构建最基础的 Webpack 工程
+  * Tag: webpack
 
-##Step 2 - Add the babel
-###npm install babel-core --save-dev
-###npm install babel-loader --save-dev
-###npm install babel-preset-es2015 --save-dev
-###npm install babel-preset-stage-0 --save-dev
-###npm install file-loader --save-dev
+##Step 2 - 添加 babel
+* 添加 Babel 和 Travis-CI
+  * Tag: webpack-babel
+  * Tag: travis-ci
+
+##Step 3 - 添加 react 和代码检查
+  * 添加 React 、 eslint 和 csslint
+    * Tag:
+    * Tag: 
 
 #Redux
-##Step 1 - Add the React, Redux and other loaders
 
 
 #Ionic
