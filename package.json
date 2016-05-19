@@ -65,6 +65,7 @@
     "react-spinkit": "^1.1.7",
     "redux": "^3.5.2",
     "redux-logger": "^2.6.1",
-    "redux-thunk": "^2.1.0"
+    "redux-thunk": "^2.1.0",
+    "webpack-zepto": "0.0.1"
   }
 }

@@ -10,7 +10,22 @@ module.exports = {
   devtool: 'inline-source-map',
   entry: {
     jsx: './src/index.js',
-    html: './src/index.html'
+    html: './src/index.html',
+    vendor: [
+      'axios',
+      'history',
+      'lodash',
+      'moment',
+      'normalize.css',
+      'react',
+      'react-dom',
+      'react-redux',
+      'react-router',
+      'react-css-modules',
+      'redux',
+      'redux-thunk',
+      'webpack-zepto'
+    ]
   },
   resolve: {
     extensions: ['', '.js', '.jsx', '.json', '.scss']
