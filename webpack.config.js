@@ -1,4 +1,5 @@
-var path = require('path');
+var path = require('path')
+var webpack = require('webpack')
 
 module.exports = {
   devtool: 'inline-source-map',
@@ -22,6 +23,12 @@ module.exports = {
         loaders: [ 'babel' ]
       },
     ]
+  },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js')
+  ],
+  resolve: {
+    extensions: [ '', '.js', '.jsx' ]
   },
   devServer: {
     hot: true
