@@ -7,3 +7,11 @@ install:
 script:
     - npm run build
     - npm run test
+addons:
+  artifacts:
+    paths:
+    - "platforms/android/build/outputs/apk"
+after_success:
+  - npm install -g cordova
+  - npm run build:apk
+  - mv platforms/android/build/outputs/apk/android-debug.apk platforms/android/build/outputs/apk/ReduxHybridApp.apk
