@@ -51,10 +51,7 @@ module.exports = {
       {
         test: /\.(png|jpg|gif)$/,
         exclude: /(splashes|icons)/,
-        loaders: [
-          'file?hash=sha512&digest=hex&name=[hash].[ext]',
-          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-        ],
+        loader: 'url',
       },
       {
         test: /\.png$/,

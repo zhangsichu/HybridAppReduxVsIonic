@@ -17,7 +17,22 @@ CI Status [![Build Status](https://travis-ci.org/zhangsichu/HybridAppReduxVsIoni
   * Tag: package-loaders
 
 #Redux
-* 完成 redux 工程代码 和 Ava 测试
+* 完成 redux 工程代码
+  * Tag: redux-app
+
+#Cordova
+* 添加 cordova 工程
+  * 添加平台: cordova platform add android
+  * Tag:
+
+#Ava
+* 添加 Ava 测试
   * Tag:
 
 #Ionic
+* 添加 Ionic 工程
+  * Tag:
+
+#Raml
+* 添加 Raml Mock server
+  * Tag:
