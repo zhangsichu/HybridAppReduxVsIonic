@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <allow-intent href="market:*" />
+    <icon density="ldpi" src="icons/android/icon-36-ldpi.png" />
+    <icon density="mdpi" src="icons/android/icon-48-mdpi.png" />
+    <icon density="hdpi" src="icons/android/icon-72-hdpi.png" />
+    <icon density="xhdpi" src="icons/android/icon-96-xhdpi.png" />
+    <icon density="xxhdpi" src="icons/android/icon-144-xxhdpi.png" />
+    <icon density="xxxhdpi" src="icons/android/icon-192-xxxhdpi.png" />
+    <splash density="port-xhdpi" src="splashes/android/screen-xhdpi-portrait.png" />
+    <splash density="port-xxhdpi" src="splashes/android/screen-xxhdpi-portrait.png" />
+    <splash density="port-xxxhdpi" src="splashes/android/screen-xxxhdpi-portrait.png" />
+    <hook src="hooks/build.sh" type="before_prepare" />
+    <name>Redux Hybrid App</name>
+    <description>
+        A demo for Hybrid App starter for using Redux+React on Cordova platform.
+    </description>
+    <author email="zhangsichu@gmail.com" href="https://gmail.com">
+        ZhangSichu
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="ShowSplashScreen" value="false" />
+    <preference name="prerendered-icon" value="true" />
+    <icon src="icon.png" />
+</widget>

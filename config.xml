@@ -1,27 +1,63 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <hook src="hooks/build.sh" type="before_prepare" />
-    <name>HelloCordova</name>
+    <name>Redux Hybrid App</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        A demo for Hybrid App starter for using Redux+React on Cordova platform.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="zhangsichu@gmail.com" href="https://gmail.com">
+        ZhangSichu
     </author>
+
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
+
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
+
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+
+    <preference name="ShowSplashScreen" value="false" />
+    <preference name="SplashScreenDelay" value="1000" />
+
+    <preference name="prerendered-icon" value="true" />
+    <icon src="icon.png" />
+
     <platform name="android">
-        <allow-intent href="market:*" />
+      <allow-intent href="market:*" />
+
+      <icon src="icons/android/icon-36-ldpi.png" density="ldpi" />
+      <icon src="icons/android/icon-48-mdpi.png" density="mdpi" />
+      <icon src="icons/android/icon-72-hdpi.png" density="hdpi" />
+      <icon src="icons/android/icon-96-xhdpi.png" density="xhdpi" />
+      <icon src="icons/android/icon-144-xxhdpi.png" density="xxhdpi" />
+      <icon src="icons/android/icon-192-xxxhdpi.png" density="xxxhdpi" />
+
+      <splash src="splashes/android/screen-xhdpi-portrait.png" density="port-xhdpi" />
+      <splash src="splashes/android/screen-xxhdpi-portrait.png" density="port-xxhdpi" />
+      <splash src="splashes/android/screen-xxxhdpi-portrait.png" density="port-xxxhdpi" />
     </platform>
+
     <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
+      <allow-intent href="itms:*" />
+      <allow-intent href="itms-apps:*" />
+
+      <icon src="icons/ios/icon-57.png" width="57" height="57" />
+      <icon src="icons/ios/icon-72.png" width="72" height="72" />
+      <icon src="icons/ios/icon-76.png" width="76" height="76" />
+      <icon src="icons/ios/icon-57-2x.png" width="114" height="114" />
+      <icon src="icons/ios/icon-120.png" width="120" height="120" />
+      <icon src="icons/ios/icon-72-2x.png" width="144" height="144" />
+      <icon src="icons/ios/icon-76-2x.png" width="152" height="152" />
+
+      <splash src="splashes/ios/Default~iphone.png" width="320"  height="480" />
+      <splash src="splashes/ios/Default@2x~iphone.png" width="640"  height="960" />
+      <splash src="splashes/ios/Default-568h@2x~iphone.png" width="640"  height="1136" />
+      <splash src="splashes/ios/Default-667h.png" width="750" height="1334" />
+      <splash src="splashes/ios/Default-736h.png" width="1242" height="2208" />
     </platform>
 </widget>

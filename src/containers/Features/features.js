@@ -23,7 +23,7 @@ class Posts extends React.Component {
           title='Search'
         />
         <div className={styles.search}>
-          <input
+          <input type='text' placeholder='Keyword'
             onChange={this.inputChanged.bind(this)}
             defaultValue={this.props.phrase}
           />

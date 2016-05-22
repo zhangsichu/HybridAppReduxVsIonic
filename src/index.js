@@ -10,6 +10,11 @@ import Posts from './containers/Posts'
 import Static from './containers/Static'
 
 import getStoreInstance from './store/configureStore'
+import 'file?name=[name].[ext]!../icon.png'
+
+import '../config.xml'
+require.context('../splashes', true, /.*/)
+require.context('../icons', true, /.*/)
 
 document.addEventListener('deviceready', () => {}, false)
 

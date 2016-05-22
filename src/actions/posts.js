@@ -60,7 +60,7 @@ export function loadPosts () {
     if (!isLoading(getState()) && isUpdateNeeds(getState(), 10000)) {
       dispatch(fetchPosts())
 
-      Axios.get('http://www.zhangsichu.com/blogjson.asp')
+      Axios.get('http://zhangsichu.com/blogjson.asp')
         .then((response) => {
           dispatch(receivePosts(response.data))
         })
@@ -77,7 +77,7 @@ export function loadPost (id) {
       dispatch(fetchPost())
     }
 
-    Axios.get(`http://www.zhangsichu.com/blogitemjson.asp?id=${id}`)
+    Axios.get(`http://zhangsichu.com/blogitemjson.asp?id=${id}`)
       .then((response) => {
         dispatch(receivePost(response.data))
       })
