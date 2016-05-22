@@ -3,29 +3,16 @@ var webpack = require('webpack')
 var autoprefixer = require('autoprefixer')
 var precss = require('precss')
 var stylelint = require('stylelint')
+var appPackage = require('./package.json')
 
 var outputPath = './www'
+var localhost = 'http://localhost:' + appPackage.devPort + '/'
 
 module.exports = {
   devtool: 'inline-source-map',
   entry: {
     jsx: './src/index.js',
-    html: './src/index.html',
-    vendor: [
-      'axios',
-      'history',
-      'lodash',
-      'moment',
-      'normalize.css',
-      'react',
-      'react-dom',
-      'react-redux',
-      'react-router',
-      'react-css-modules',
-      'redux',
-      'redux-thunk',
-      'webpack-zepto'
-    ]
+    html: './src/index.html'
   },
   resolve: {
     extensions: ['', '.js', '.jsx', '.json', '.scss']
@@ -33,31 +20,28 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, outputPath),
     filename: 'bundle.js',
+    publicPath: localhost
   },
   module: {
     preLoaders: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
+        include: path.join(__dirname, 'src'),
         loader: 'standard'
       }
     ],
     loaders: [
       {
-        test: /\.(html)$/,
+        test: /\.(html|xml)$/,
         loader: 'file?name=[name].[ext]'
       },
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
+        include: path.join(__dirname, 'src'),
         loaders: [ 'react-hot', 'babel' ]
       },
       {
-        test: /\.css$/,
-        loaders: [ 'style', 'css' ]
-      },
-      {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         loaders: [
           'style',
           'css?modules&sourceMap&importLoaders=1&localIdentName=[name]__[local]--[hash:base64:5]',
@@ -88,7 +72,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
     new webpack.NoErrorsPlugin()
   ],
   postcss: [

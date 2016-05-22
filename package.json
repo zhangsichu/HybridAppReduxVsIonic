@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Hybrid application redux Vs ionic",
   "main": "index.js",
+  "devPort": 3000,
   "scripts": {
     "start": "webpack-dev-server --hot --progress --inline --colors --port 3000",
     "test": "echo \"Error: no test specified\" && exit 0",
@@ -65,7 +66,6 @@
     "react-spinkit": "^1.1.7",
     "redux": "^3.5.2",
     "redux-logger": "^2.6.1",
-    "redux-thunk": "^2.1.0",
-    "webpack-zepto": "0.0.1"
+    "redux-thunk": "^2.1.0"
   }
 }

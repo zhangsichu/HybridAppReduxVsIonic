@@ -1,0 +1,17 @@
+.search {
+  input {
+    width: 10em;
+    height: 1.3em;
+  }
+
+  li {
+    font-size: 0.9em;
+    line-height: 150%;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em 0;
+}
