@@ -23,11 +23,11 @@ CI Status [![Build Status](https://travis-ci.org/zhangsichu/HybridAppReduxVsIoni
 #Cordova
 * 添加 cordova 工程
   * 添加平台: cordova platform add android
-  * Tag:
+  * Tag: cordova-app
 
 #Ava
 * 添加 Ava 测试
-  * Tag:
+  * Tag: 
 
 #Ionic
 * 添加 Ionic 工程
