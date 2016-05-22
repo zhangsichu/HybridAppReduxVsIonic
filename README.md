@@ -27,7 +27,7 @@ CI Status [![Build Status](https://travis-ci.org/zhangsichu/HybridAppReduxVsIoni
 
 #Ava
 * 添加 Ava 测试
-  * Tag: 
+  * Tag:
 
 #Ionic
 * 添加 Ionic 工程
@@ -35,4 +35,4 @@ CI Status [![Build Status](https://travis-ci.org/zhangsichu/HybridAppReduxVsIoni
 
 #Raml
 * 添加 Raml Mock server
-  * Tag:
+  * Tag: 
