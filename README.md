@@ -1,6 +1,8 @@
 # Hybrid App Redux Vs Ionic
 
-CI Status [![Build Status](https://travis-ci.org/zhangsichu/HybridAppReduxVsIonic.svg?branch=master)](https://travis-ci.org/zhangsichu/HybridAppReduxVsIonic)
+Travis CI Status [![Build Status](https://travis-ci.org/zhangsichu/HybridAppReduxVsIonic.svg?branch=master)](https://travis-ci.org/zhangsichu/HybridAppReduxVsIonic)
+
+Circle CI  Status [![CircleCI](https://circleci.com/gh/zhangsichu/HybridAppReduxVsIonic/tree/master.svg?style=svg)](https://circleci.com/gh/zhangsichu/HybridAppReduxVsIonic/tree/master)
 
 #Webpack
 ###Step 1 - 初始化 webpack
