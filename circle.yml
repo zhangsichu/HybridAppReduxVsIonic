@@ -1,0 +1,13 @@
+machine:
+  node:
+    version: 5.11.1
+general:
+  artifacts:
+    - "platforms/android/build/outputs/apk"
+deployment:
+  'v1.0':
+    branch: master
+    commands:
+      - npm install -g cordova
+      - npm run build:apk
+      - mv platforms/android/build/outputs/apk/android-debug.apk platforms/android/build/outputs/apk/build.$CIRCLE_BUILD_NUM.apk

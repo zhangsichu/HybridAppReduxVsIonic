@@ -5,7 +5,7 @@
   "main": "index.js",
   "devPort": 3000,
   "scripts": {
-    "start": "webpack-dev-server --hot --progress --inline --colors --port 3000",
+    "start": "webpack-dev-server --hot --progress --devtool eval --inline --colors --port 3000",
     "test": "ava src/__test__/**/*.spec.js",
     "build": "webpack --progress --colors",
     "build:apk": "cordova build android"
