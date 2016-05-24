@@ -14,8 +14,8 @@ addons:
 after_success:
   - npm install -g cordova
   - cordova platform update android
-  - wget http://dl.google.com/android/android-sdk_r22.3-linux.tgz
-  - tar -zxf android-sdk_r22.3-linux.tgz
+  - wget http://dl.google.com/android/android-sdk_r23-linux.tgz
+  - tar -zxf android-sdk_r23-linux.tgz
   - export ANDROID_HOME=`pwd`/android-sdk-linux
   - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
   - npm run build:apk
