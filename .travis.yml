@@ -1,6 +1,9 @@
 language: node_js
 node_js:
   - "5"
+android:
+  components:
+    - android-8
 sudo: false
 install:
     - npm install
@@ -12,7 +15,6 @@ addons:
     paths:
     - "platforms/android/build/outputs/apk"
 after_success:
-  - npm cache clean
   - npm install -g cordova
   - cordova platform update android
   - npm run build:apk
