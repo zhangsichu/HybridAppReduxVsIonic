@@ -11,4 +11,4 @@ deployment:
       - npm install -g cordova
       - cordova platform update android
       - npm run build:apk
-      - mv platforms/android/build/outputs/apk/android-debug.apk platforms/android/build/outputs/apk/ReduxHybridApp.apk
+      - mv platforms/android/build/outputs/apk/android-debug.apk platforms/android/build/outputs/apk/ReduxHybridApp.$CIRCLE_BUILD_NUM.apk
