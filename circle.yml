@@ -10,5 +10,6 @@ deployment:
     commands:
       - npm cache clean
       - npm install -g cordova
+      - cordova platform update android
       - npm run build:apk
       - mv platforms/android/build/outputs/apk/android-debug.apk platforms/android/build/outputs/apk/build.$CIRCLE_BUILD_NUM.apk
