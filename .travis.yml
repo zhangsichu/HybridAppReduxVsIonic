@@ -17,5 +17,6 @@ addons:
 after_success:
   - npm install -g cordova
   - cordova platform update android
+  - export ANDROID_HOME="$HOME/android-sdk-linux"
   - npm run build:apk
   - mv platforms/android/build/outputs/apk/android-debug.apk platforms/android/build/outputs/apk/ReduxHybridApp.apk
