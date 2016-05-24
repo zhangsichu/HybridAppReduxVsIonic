@@ -12,6 +12,7 @@ addons:
     paths:
     - "platforms/android/build/outputs/apk"
 after_success:
+  - npm cache clean
   - npm install -g cordova
   - npm run build:apk
   - mv platforms/android/build/outputs/apk/android-debug.apk platforms/android/build/outputs/apk/ReduxHybridApp.apk
