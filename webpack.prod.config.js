@@ -75,7 +75,6 @@ module.exports = {
       }
     }),
     new webpack.NoErrorsPlugin(),
-    new CleanWebpackPlugin(outputPath),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false
