@@ -21,7 +21,7 @@ describe('Redux Hybrid App', () => {
   }
 
   let store
-  it('should init pluginState with Missing', () => {
+  it('should set serach state', () => {
       store = makeStore()
       let result = store.dispatch(changeSearch('redux'))
       result.should.eql({type: types.SEARCH_CHANGE, data: 'redux'})
